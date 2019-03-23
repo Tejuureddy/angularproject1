@@ -1,0 +1,44 @@
+  
+<!-- <div class="container">
+    <router-outlet></router-outlet>
+    <input type="text" class="form-control mt-2"
+    #title (keyup.enter)="createData(title)" />
+    <ul class="list-group">
+        <li class="list-group-item" *ngFor="let post of posts">
+          <h1>{{post.title}}</h1>
+          <p>{{post.body}}</p>
+        </li>                                                                                                           </li>
+    </ul>
+</div> -->
+ <!-- <app-header></app-header> 
+<router-outlet></router-outlet>   -->
+<!-- <div class="container">
+     <input type="text" class="form-control mt-2"
+    #title (keyup.enter)="createData(title)">
+    <ul class="list-group">
+        <li class="list-group-item mt-2" *ngFor="let post of posts">
+            <h1>{{post.title}}</h1>
+            {{post.body}}
+          <button class="btn btn-danger float-right"
+            (click)="removeData(post)>delete</button>
+        </li>
+    </ul>
+</div> -->
+
+<div class="container">
+<app-child [myInput]="myInputText"></app-child>
+<app-aboutservice></app-aboutservice>
+<table class="table table-bordered">
+    <tr>
+        <th>name</th>
+        <th>doj</th>
+        <th>salary</th>
+    </tr>
+    <tr>
+        <td>{{emp.name | uppercase}}</td>
+        <td>{{emp.doj | date:'shortDate'}}</td>
+        <td>{{emp.salary | currency:'INR}}</td>
+    </tr>
+</table>
+<p>{{text | summary}}</p>
+</div>
